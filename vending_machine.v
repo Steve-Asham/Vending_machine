@@ -8,11 +8,11 @@ output reg [2:0] change = 3'b000 //change given from machine with the 3-bits rep
 );
 // Declaring States as parameters
  localparam [2:0] IDLE=3'b000,
-				  FIVE=3'b001,
-				  TEN=3'b010,
-				  FIFTEEN=3'b011,
-				  TWENTY=3'b100,
-				  TWENTY_FIVE=3'b101;
+		  FIVE=3'b001,
+		  TEN=3'b010,
+		  FIFTEEN=3'b011,
+		  TWENTY=3'b100,
+		  TWENTY_FIVE=3'b101;
 // Defining states as reg
  reg [2:0] state_reg, state_next;
  // Reset machine state to IDLE, vend & change to none
